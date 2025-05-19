@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- טקסטים כלליים -->
+    <string name="app_name">student repository</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add_student">Add Student</string>
+
+    <!-- טיפים ומסייעים -->
+    <string name="student_image">Student image</string>
+    <string name="name_hint">Name: ...</string>
+    <string name="id_hint">ID: ...</string>
+    <string name="phone_hint">Phone: ...</string>
+    <string name="address_hint">Address: ...</string>
+    <string name="checked">Checked</string>
+
+    <!-- ערכים ברירת מחדל -->
+    <string name="default_phone">054-0000000</string>
+    <string name="default_address">Tel Aviv</string>
+
+    <!-- הודעות -->
+    <string name="student_saved">Student saved!</string>
+    <string name="student_deleted">Student deleted</string>
+
+</resources>

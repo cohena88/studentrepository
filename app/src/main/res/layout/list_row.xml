@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/list_row_student_image_view"
+        android:layout_width="94dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/list_row_userid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/student"
+
+        />
+
+    <TextView
+        android:id="@+id/list_row_username"
+        android:layout_width="245dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/list_row_checkbox"
+        app:layout_constraintStart_toEndOf="@+id/list_row_student_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_row_userid"
+        android:layout_width="244dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/list_row_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/list_row_username" />
+
+    <CheckBox
+        android:id="@+id/list_row_checkbox"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

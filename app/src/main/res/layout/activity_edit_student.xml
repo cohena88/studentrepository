@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- כותרת עליונה -->
+    <TextView
+        android:id="@+id/edit_student_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Student"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_purple"
+        android:gravity="start"
+        android:padding="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- תמונת הסטודנט -->
+    <ImageView
+        android:id="@+id/edit_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/student"
+        android:contentDescription="@string/student_image"
+        app:layout_constraintTop_toBottomOf="@id/edit_student_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- שדות טופס -->
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/edit_image"
+        app:layout_constraintStart_toEndOf="@id/edit_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_hint"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_name"
+        app:layout_constraintStart_toStartOf="@id/edit_name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_id"
+        app:layout_constraintStart_toStartOf="@id/edit_id"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/address_hint"
+        android:inputType="textPostalAddress"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone"
+        app:layout_constraintStart_toStartOf="@id/edit_phone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/edit_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checked"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- כפתורי פעולה -->
+    <Button
+        android:id="@+id/edit_cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/edit_delete_button" />
+
+    <Button
+        android:id="@+id/edit_delete_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_cancel_button"
+        app:layout_constraintEnd_toStartOf="@id/edit_save_button" />
+
+    <Button
+        android:id="@+id/edit_save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_delete_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
